@@ -6,10 +6,21 @@ export default {
 </script>
 
 <template>
-  <section>
-    <div class="nv_container">
-      <h1>Start Learning</h1>
+  <!--Call to action telefonica-->
+  <section class="cta_call">
+    <div class="nv_container h-100 d-flex align-items-center justify-content-between">
+      <div>
+        <span>Start Learning to Drive Today</span>
+        <h5>Give us a call to schedule your first driving lesson</h5>
+      </div>
+      <div>
+          <span>1-800-555-555</span>
+      </div>
     </div>
+
+  </section>
+
+  <section>
 
     <div>
       <div class="nv_container">
@@ -43,6 +54,20 @@ export default {
 <style lang="scss" scoped>
 @use '../scss/general/variables' as *;
 
+.cta_call{
+  background-image: url(../../public/img/horizontal-cta-background.jpg);
+  background-size: cover;
+  height: 240px;
+  span{
+    font-size: 35px;
+    font-weight: 600;
+    color: $secondary-color;
+  }
+  h5{
+    color: $secondary-color;
+  }
+
+}
 .col{
     //debugg
     background-color: $primary-color;

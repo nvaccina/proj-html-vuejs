@@ -71,7 +71,7 @@ header{
     bottom: 200px;
     color: $secondary-color;
     span{
-      font-size: 70px;
+      font-size: 55px;
       font-weight: 600;
       
     }

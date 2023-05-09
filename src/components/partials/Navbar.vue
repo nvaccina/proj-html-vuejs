@@ -81,7 +81,7 @@ export default {
 
 li{
   padding: 0;
-  margin: 0 20px;
+  margin: 0 10px;
 
   &:hover{
     .dropdown-menu{
@@ -118,7 +118,7 @@ li{
     }
   }
   .nv_button{
-    padding: 10px 30px;
+    padding: 10px 25px;
     background-color: $primary-color;
     border-radius: 25px;
     cursor: pointer;
