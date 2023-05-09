@@ -23,13 +23,24 @@ export default {
   </header>
 
   <div class="nv_jumbotron">
+
     <img class="w-100 h-100" src="../../public/img/homepage-hero-background.jpg" alt="homepage-hero-background">
+    
+    <div class="jumbo">
+      <span>Drive with Avada</span>
+      <h4>We offer the finest driving tuition money can buy</h4>
+      
+    </div>
+
+
   </div>
   
 </template>
 
 
 <style lang="scss" scoped>
+@use '../scss/general/variables' as *;
+
 header{
   position: absolute;
   top: 0;
@@ -54,6 +65,22 @@ header{
   img{
     object-fit: cover;
   }
+  .jumbo{
+    position: absolute;
+    left: 10%;
+    bottom: 200px;
+    color: $secondary-color;
+    span{
+      font-size: 70px;
+      font-weight: 600;
+      
+    }
+    p{
+      font-size: 40px;
+
+    }
+  }
+
 }
 
 
