@@ -42,7 +42,7 @@ export default {
               <input type="text" class="form-control" placeholder="Last name" aria-label="Location">
             </div>
             <div class="col-12 py-3 text-center">
-              <button type="submit" class="send_request">request a callback</button>
+              <button type="submit" class="nv_button ">request a callback</button>
             </div>
 
           </div>
@@ -70,30 +70,19 @@ section{
       color: $primary-color;
     }
     span{
-      color: $font-section-form;
+      color: $font-section;
       font-size: 22px;
     }
     p{
-      color: $font-section-form;
+      color: $font-section;
     }
     .form-control{
       background-color: $tertiary-color;
       &[placeholder]{
-        color: $font-section-form;
+        color: $font-section;
         font-size: 12px;
         padding: 15px;
       }
-    }
-    .send_request{
-      padding: 10px 25px;
-      background-color: $primary-color;
-      border-radius: 25px;
-      border: none;
-      cursor: pointer;
-      color: $secondary-color;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 14px;
     }
     
   }

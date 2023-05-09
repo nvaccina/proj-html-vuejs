@@ -8,3 +8,4 @@ Riprodurre il layout proposto solo in versione Desktop
 - Aggiunto titolo al jumbotron;
 - Creata Section Form con input;
 - Aggiunta Call to action telefonica alla section_course;
+- Aggiunte cards Section Course;

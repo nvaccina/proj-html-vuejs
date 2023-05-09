@@ -60,8 +60,8 @@ export default {
             </li>
 
             <li class="py-0">
-              <div class="nv_button">
-                <span>BOOK NOW</span>
+              <div>
+                <a class="nv_button" href="#">BOOK NOW</a>
               </div>
             </li>
           </ul>
@@ -117,16 +117,7 @@ li{
       margin-left: 4px;
     }
   }
-  .nv_button{
-    padding: 10px 25px;
-    background-color: $primary-color;
-    border-radius: 25px;
-    cursor: pointer;
-    span{
-      color: $secondary-color;
-      font-weight: 700;
-    }
-  }
+
 
 }
 

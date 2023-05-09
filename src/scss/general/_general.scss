@@ -10,3 +10,38 @@ img{
 .show{
   display: block;
 }
+a{
+  text-decoration: none !important;
+}
+.nv_button{
+  text-transform: uppercase;
+  padding: 10px 23px;
+  background-color: $primary-color;
+  border-radius: 25px;
+  color: $secondary-color;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  &:hover{
+    text-decoration: none;
+    color: $secondary-color;
+    background-color: darken($color: $primary-color, $amount: 8%)
+
+  }
+}
+
+.nv_button_grey{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 13px;
+  color: $font-section;
+  border: 3px solid $font-section;
+  border-radius: 15px;
+  &:hover{
+    color: $primary-color;
+    border: 3px solid $primary-color;
+
+  }
+}
