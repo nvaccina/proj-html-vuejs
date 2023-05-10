@@ -113,7 +113,7 @@ footer{
   background-color: #333333;
   .footer_top{
     min-height: 400px;
-    background-image: url(../../public/img/testimonial-background.jpg);
+    background-image: url(/img/footer-background-color.jpg);
     backdrop-filter: grayscale(100%);
     background-size: cover;
     background-position: center center;

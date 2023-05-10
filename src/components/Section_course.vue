@@ -10,11 +10,11 @@ export default {
   <section class="cta_call">
     <div class="nv_container h-100 d-flex align-items-center justify-content-between">
       <div>
-        <span>Start Learning to Drive Today</span>
+        <span class="fs-35 fw-600">Start Learning to Drive Today</span>
         <h5>Give us a call to schedule your first driving lesson</h5>
       </div>
       <div>
-          <span>1-800-555-555</span>
+          <span class="fs-30"><i class="fa-solid fa-phone pe-4"></i>1-800-555-555</span>
       </div>
     </div>
   </section>
@@ -24,14 +24,17 @@ export default {
 
     <div>
       <div class="nv_container">
-        <div class="row my-5">
+        <div class="row mt-5">
           <div class="col-4 text-center main_card_courses">
-            <div class="triangle">New</div>
+            <div class="triangle_container">
+              <div class="triangle">New</div>
+            </div>
+            
             <h2 class="pt-5">Courses</h2>
-            <p class="px-3">
+            <p class="px-5 py-5 ln_heigth-200 font_section_c">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
             </p>
-            <div>
+            <div class="pb-5">
               <a class="nv_button" href="#">COURSE INFORMATION</a>
             </div>
           </div>
@@ -74,7 +77,8 @@ export default {
 
   </section>
   <section class="pb-5">
-    <div>
+    <div class="percentuali">
+      <img src="../../public/img/latestnews-bottom.png" alt="">
       <div class="nv_container">
         <h1>% esami passati</h1>
         <div class="row">
@@ -96,7 +100,7 @@ export default {
           <div class="col-4"></div>
         </div>
       </div>
-      
+
     </div>
     
   </section>
@@ -111,33 +115,42 @@ export default {
 .cta_call{
   background-image: url(../../public/img/horizontal-cta-background.jpg);
   background-size: cover;
-  height: 240px;
-  span{
-    font-size: 35px;
-    font-weight: 600;
-    color: $secondary-color;
-  }
+  min-height: 240px;
+  color: $secondary-color;
   h5{
     color: $secondary-color;
   }
 
 }
 .courses{
-  background-image: url(../../public/img/promise-background.jpg);
+  background-image: url(/img/promise-background.jpg);
   background-size: cover;
-  min-height: 400px;
+  background-position: center center;
+  min-height: 450px;
+}
+.row{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  
 }
   .main_card_courses{
-    position: relative;
+    position: absolute;
+    left: 0;
+    bottom: -45px;
+    
     border-radius: 15px;
     overflow: hidden;
-    box-shadow:  10px 15px 25px 10px rgba(0, 0, 0, 0.1);
-    .triangle{
+    background-color: $secondary-color;
+    box-shadow:  20px 20px 10px 5px rgba(0, 0, 0, 0.1);
+    .triangle_container{
+      position: relative;
+      .triangle{
       position: absolute;
-      left: -35px;
-      top: -10px;
+      left: -50px;
+      top: -5px;
       transform: rotate(315deg);
-      width:100px; 
+      width:120px; 
       padding-top: 20px; 
       padding-bottom: 8px; 
       color: $secondary-color;
@@ -147,6 +160,9 @@ export default {
       font-size: 14px;
 
     }
+
+    }
+
   }
   .course_card{
     .image_course{
@@ -167,9 +183,15 @@ export default {
   .debug{
     border: 1px solid black;
   }
+.percentuali{
+  background-size: cover;
+  
+  img{
+    filter: invert(5%) grayscale(100%);
+  }
   .circle_container{
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border: 1px solid red;
     margin: 20px auto;
     .circle_big{
@@ -201,6 +223,9 @@ export default {
       animation-timing-function: linear;
       }*/
   }
+
+}
+
 
 
 </style>

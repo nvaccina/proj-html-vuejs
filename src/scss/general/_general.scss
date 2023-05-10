@@ -1,6 +1,4 @@
-body { 
-  font-family: "Mulish", sans-serif; 
-}
+
 .nv_container{
   width: 75%;
   max-width: 1400px;
@@ -12,12 +10,7 @@ img{
 .show{
   display: block;
 }
-li{
-  list-style: none;
-}
-a{
-  text-decoration: none !important;
-}
+
 .nv_button{
   text-transform: uppercase;
   padding: 10px 23px;
@@ -55,4 +48,10 @@ a{
 }
 .primary_c{
   color: $primary_color;
+}
+.font_section_c{
+  color: $font-section;
+}
+.bg_second_col{
+  background-color: $secondary-color;
 }

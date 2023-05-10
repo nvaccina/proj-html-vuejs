@@ -56,7 +56,7 @@ header{
 .nv_jumbotron{
   position: relative;
   height: 595px;
-  background-image: url(../../public/img/homepage-hero-background.jpg);
+  background-image: url(/img/homepage-hero-background.jpg);
   background-size: cover;
   background-position: center center;
 

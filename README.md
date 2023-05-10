@@ -12,3 +12,4 @@ Riprodurre il layout proposto solo in versione Desktop
 - Struttura footer top con props;
 - Strutta footer bottom con props;
 - Struttura e cards instructors;
+- Section News strutturata e rifinita;
