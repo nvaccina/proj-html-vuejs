@@ -17,7 +17,7 @@ export default {
   <div class="nv_container">
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+    
 
         <div class="logo">
           <a class="h-100 w-100" href="">
@@ -66,7 +66,7 @@ export default {
             </li>
           </ul>
         </div>
-      </div>
+
     </nav>
   </div>
   
@@ -86,7 +86,7 @@ li{
   &:hover{
     .dropdown-menu{
       display: block;
-      a{
+      a:not(.nv_button){
         border: 0px !important;
         color: black !important;
       }
@@ -104,9 +104,9 @@ li{
       
     }
   }
-  a{
+  a:not(.nv_button){
     color: $secondary-color !important;
-    padding-bottom: 20px !important;
+    padding-bottom: 20px;
     border-bottom: 2px solid transparent;
     .new{
       background-color: $primary-color;

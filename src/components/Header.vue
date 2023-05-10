@@ -18,7 +18,7 @@ export default {
       </div>
     </div>
 
-    <Navbar/>
+    <Navbar class="mt-3"/>
 
   </header>
 
