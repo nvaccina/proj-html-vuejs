@@ -1,9 +1,13 @@
 
 <script>
 import {mainMenu} from '../../data/menu.js';
+import menu_component from '../partials/menu_component.vue'
 
 export default {
   name:'Navbar',
+  components:{
+    menu_component
+  },
   data(){
     return{
       mainMenu,
@@ -19,7 +23,7 @@ export default {
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     
 
-        <div class="logo">
+        <div class="logo pe-5">
           <a class="h-100 w-100" href="">
             <img src="../../../public/img/avada-drivers-logo-2x-300x58.png" alt="Logo Avada Drivers">
           </a>
@@ -29,42 +33,24 @@ export default {
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse ms-5" id="navbarNavDropdown">
 
           <ul class="navbar-nav">
 
-            <li 
-              class="nav-item" 
+            <menu_component
               v-for="(link, index) in mainMenu" 
               :key="index"
-              :class="{'dropdown': link.isdrop}"
-            >
-              <a 
-                class="nav-link" 
-                aria-current="page" 
-                :href="link.href" 
-                :class="{'dropdown-toggle': link.isdrop}"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                {{ link.text }}
-                <span v-if="link.text == 'COURSES'" class="new">NEW</span>
-              </a>
-              <ul class="dropdown-menu" v-if="link.dropdownMenu">
-                <li 
-                  v-for="(i, index) in link.dropdownMenu" 
-                  :key="index"
-                ><a class="dropdown-item py-0" href="#">{{link.dropdownMenu[0]}}</a></li>
-              </ul>
-            </li>
-
-            <li class="py-0">
-              <div>
-                <a class="nv_button" href="#">BOOK NOW</a>
-              </div>
-            </li>
+              :href="link.href"
+              :text="link.text"
+              :isActive="link.isActive"
+              :isdrop="link.isdrop"
+              :dropdownMenu:="link.dropdownMenu"
+            />
           </ul>
+          <div class="ms-4">
+            <a class="nv_button" href="#">BOOK NOW</a>
+          </div>
+
         </div>
 
     </nav>
@@ -76,50 +62,10 @@ export default {
 @use '../../scss/general/variables' as *;
 
 .logo{
-  width: 270px;
+  width: 300px;
 }
 
-li{
-  padding: 0;
-  margin: 0 10px;
 
-  &:hover{
-    .dropdown-menu{
-      display: block;
-      a:not(.nv_button){
-        border: 0px !important;
-        color: black !important;
-      }
-    }
-    a{
-      border-bottom: 2px solid $primary-color !important;
-      color: $primary-color !important;
-    }
-  }
-  &:active{
-
-    a{
-      border-bottom: 2px solid $primary-color !important;
-      color: $primary-color !important;
-      
-    }
-  }
-  a:not(.nv_button){
-    color: $secondary-color !important;
-    padding-bottom: 20px;
-    border-bottom: 2px solid transparent;
-    .new{
-      background-color: $primary-color;
-      color: $secondary-color;
-      font-size: 12px;
-      padding: 2px 6px;
-      border-radius: 4px;
-      margin-left: 4px;
-    }
-  }
-
-
-}
 
 
 </style>

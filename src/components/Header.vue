@@ -10,29 +10,24 @@ export default {
 </script>
 
 <template>
-  <header>
-    <div class="top_contact">
-      <div class="nv_container d-flex justify-content-between align-items-center">
-        <span>We have a 95% Successfull Pass Rate!</span>
-        <span>Give us a call to book your tuition! 1-800-555-555</span>
-      </div>
+  <div class="top_contact">
+    <div class="nv_container d-flex justify-content-between align-items-center">
+      <span>We have a 95% Successfull Pass Rate!</span>
+      <span><i class="fa-solid fa-phone pe-2"></i>Give us a call to book your tuition! 1-800-555-555</span>
     </div>
+  </div>
+  <header>
 
-    <Navbar class="mt-3"/>
+
+    <Navbar class="mt-4"/>
 
   </header>
 
   <div class="nv_jumbotron">
-
-    <img class="w-100 h-100" src="../../public/img/homepage-hero-background.jpg" alt="homepage-hero-background">
-    
     <div class="jumbo">
       <span>Drive with Avada</span>
       <h4>We offer the finest driving tuition money can buy</h4>
-      
     </div>
-
-
   </div>
   
 </template>
@@ -40,34 +35,34 @@ export default {
 
 <style lang="scss" scoped>
 @use '../scss/general/variables' as *;
-
+.top_contact{
+    background-color: #333333;
+    color: #7799AD;
+  .nv_container{
+    padding: 15px 0;
+    font-size: 13px;
+    height: 50px;
+  }
+}
 header{
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   z-index: 1;
   width: 100%;
-  min-height: 170px;
-  background-color: rgba(0, 0, 0, 0.6);
-  .top_contact{
-    background-color: #333333;
-    color: #7799AD;
-    .nv_container{
-      padding: 15px 0;
-      font-size: 13px;
-    }
-  }
+  min-height: 115px;
+  background-color: rgba(54, 52, 52, 0.5);
 }
 .nv_jumbotron{
   position: relative;
-  height: 600px;
-  
-  img{
-    object-fit: cover;
-  }
+  height: 595px;
+  background-image: url(../../public/img/homepage-hero-background.jpg);
+  background-size: cover;
+  background-position: center center;
+
   .jumbo{
     position: absolute;
-    left: 10%;
+    left: 12%;
     bottom: 200px;
     color: $secondary-color;
     span{
