@@ -82,5 +82,24 @@ const listCourses = [
     text: "Instructor Training",
   }
 ];
+const iconSocial = [
+  {
+    icon: "fa-brands fa-facebook-f",
+    href: "#",
+  },
+  {
+    icon: "fa-brands fa-twitter",
+    href: "#",
+  },
+  {
+    icon: "fa-brands fa-youtube",
+    href: "#",
+  },
+  {
+    icon: "fa-brands fa-instagram",
+    href: "#",
+  }
+];
 
-export {mainMenu, contactDetails, listCourses};
+
+export {mainMenu, contactDetails, listCourses, iconSocial};

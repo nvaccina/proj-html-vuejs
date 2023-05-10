@@ -10,3 +10,4 @@ Riprodurre il layout proposto solo in versione Desktop
 - Aggiunta Call to action telefonica alla section_course;
 - Aggiunte cards Section Course;
 - Struttura footer top con props;
+- Strutta footer bottom con props;

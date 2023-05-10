@@ -2,6 +2,7 @@
 import List_footer_element from './partials/List_footer_element.vue'
 import {contactDetails} from '../data/menu'
 import {listCourses} from '../data/menu'
+import {iconSocial} from '../data/menu'
 
 export default {
   name:'Footer',
@@ -11,7 +12,8 @@ export default {
   data(){
     return{
       contactDetails,
-      listCourses
+      listCourses,
+      iconSocial
     }
   }
 
@@ -20,24 +22,22 @@ export default {
 
 <template>
 
-<i class="fa-solid fa-house"></i>
-
   <footer>
     <div class="footer_top">
 
       <div class="nv_container">
-        <div class="row">
+        <div class="row py-5">
 
-          <div class="col-3">
+          <div class="col-3 pe-4">
             <img src="../../public/img/avada-drivers-logo-1x.png" alt="Logo">
-            <p>
+            <p class="fc_light_blu fs-12 mt-2 ln_heigth-200">
               Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver wanting to pass first time.
             </p>
           </div>
 
-          <div class="col-3">
-            <h6>contact details</h6>
-            <ul>
+          <div class="col-3 ps-5">
+            <p class="title_list"> <strong>contact details</strong> </p>
+            <ul class="px-0">
               <List_footer_element
                 v-for="(element, index) in contactDetails"
                 :key="index"
@@ -49,7 +49,7 @@ export default {
             </ul>
           </div>
           <div class="col-3">
-            <h6>courses</h6>
+            <p class="title_list"> <strong>courses</strong> </p>
             <ul>
               <List_footer_element
                 v-for="(element, index) in listCourses"
@@ -57,14 +57,15 @@ export default {
                 :icon="element.icon"
                 :href="element.href"
                 :text="element.text"
+                class="primary_c"
               />
             </ul>
           </div>
 
           <div class="col-3 text-center">
-            <img src="../../public/img/footer-ad-grid.png" alt="">
+            <img class="mb-3" src="../../public/img/footer-ad-grid.png" alt="Footer grid">
             <div class="mt-3">
-              <a class="nv_button" href="#">Learn More</a>
+              <a class="nv_button" href="#">book now</a>
             </div>
           </div>
         </div>
@@ -74,20 +75,59 @@ export default {
     </div>
 
 
+    <div class="footer_bottom">
+      <div class="nv_container d-flex align-items-center justify-content-between">
 
-    <div class="nv_container">
-      <h2>Footer Boottom</h2>
+        <div class="credits">
+          <p class="fs-12 fc_light_blu mb-0">© Copyright 2012 - 2023 | Avada Theme by <span class="primary_c">ThemeFusion</span> | All Rights Reserved | Powered by <span class="primary_c">WordPress</span></p>
+        </div>
+
+        <div class="social">
+          <ul class="d-flex align-items-center mb-0">
+            <List_footer_element
+              v-for="(element, index) in iconSocial"
+              :key="index"
+              :icon="element.icon"
+              :href="element.href"
+              :text="element.text"
+              class="primary_c"
+            />
+ 
+          </ul>
+        </div>
       
+      </div>
+
     </div>
+
   </footer>
   
 </template>
 
 <style lang="scss" scoped>
-.footer_top{
-  min-height: 350px;
-  background-image: url(../../public/img/testimonial-background.jpg);
-  background-size: cover;
+@use '../scss/general/variables' as *;
+@import '../scss/general/general';
+@import '../scss/general/typography';
+
+footer{
+  background-color: #333333;
+  .footer_top{
+    min-height: 400px;
+    background-image: url(../../public/img/testimonial-background.jpg);
+    backdrop-filter: grayscale(100%);
+    background-size: cover;
+    background-position: center center;
+
+    .title_list{
+      text-transform: uppercase;
+      color: $secondary-color;
+    }
+  }
+  .footer_bottom{
+    padding: 47px 0;
+  }
+
+
 }
 
 </style>
