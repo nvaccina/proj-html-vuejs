@@ -11,7 +11,7 @@ export default {
   },
   data(){
     return{
-      instructor_image: `/public/img/${this.image}.jpg`,
+      instructor_image: `/img/${this.image}.jpg`,
     }
   }
 

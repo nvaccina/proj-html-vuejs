@@ -7,11 +7,11 @@ export default {
 
 <template>
   <section class="news">
+
     <div class="nv_container text-center p-5 bg_second_col">
       <h1 class="pb-5">Latest News</h1>
 
       <div class="row pb-5">
-
         <div class="col">
           <div class="car_image">
             <img src="/img/blog-choosecar-320x202.jpg" alt="Audi Red">
@@ -38,10 +38,13 @@ export default {
           </div>
         </div>
       </div>
+
       <div>
         <a class="nv_button" href="#">More from the blog</a>
       </div>
+
     </div>
+    
     <div class="nv_container pb-80">
       <img src="../../public/img/latestnews-bottom.png" alt="">
     </div>

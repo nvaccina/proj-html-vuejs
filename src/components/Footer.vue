@@ -29,7 +29,7 @@ export default {
         <div class="row py-5">
 
           <div class="col-3 pe-4">
-            <img src="../../public/img/avada-drivers-logo-1x.png" alt="Logo">
+            <img src="/img/avada-drivers-logo-1x.png" alt="Logo">
             <p class="fc_light_blu fs-12 mt-2 ln_heigth-200">
               Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver wanting to pass first time.
             </p>
@@ -63,7 +63,7 @@ export default {
           </div>
 
           <div class="col-3 text-center">
-            <img class="mb-3" src="../../public/img/footer-ad-grid.png" alt="Footer grid">
+            <img class="mb-3" src="/img/footer-ad-grid.png" alt="Footer grid">
             <div class="mt-3">
               <a class="nv_button" href="#">book now</a>
             </div>

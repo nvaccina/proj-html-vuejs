@@ -1,6 +1,10 @@
 <script>
+import Progress_loader from './partials/Progress_loader.vue'
 export default {
   name: 'Section_course',
+  components:{
+    Progress_loader
+  }
 
 }
 </script>
@@ -41,7 +45,7 @@ export default {
 
           <div class=" col-2 text-center course_card pt-3 mx-2">
             <div class="image_course">
-              <img src="../../public/img/courses-passplus.jpg" alt="">
+              <img src="/img/courses-passplus.jpg" alt="">
             </div>
             
             <h5 class="py-3">Pass Plus</h5>
@@ -52,7 +56,7 @@ export default {
 
           <div class="col-2 text-center course_card pt-3">
             <div class="image_course">
-              <img src="../../public/img/course-intensive.jpg" alt="">
+              <img src="/img/course-intensive.jpg" alt="">
             </div>
             <h5 class="py-3">Intensive Course</h5>
             <div>
@@ -62,7 +66,7 @@ export default {
 
           <div class="col-2 text-center course_card pt-3 mx-4">
             <div class="image_course">
-              <img src="../../public/img/courses-instructor.jpg" alt="">
+              <img src="/img/courses-instructor.jpg" alt="">
             </div>
             <h5 class="py-3">Instructors</h5>
             <div>
@@ -78,27 +82,17 @@ export default {
   </section>
   <section class="pb-5">
     <div class="percentuali">
-      <img src="../../public/img/latestnews-bottom.png" alt="">
-      <div class="nv_container">
-        <h1>% esami passati</h1>
-        <div class="row">
-          <div class="col-4 debug">
-            
-            <div class="circle_container">
-              <div class="circle_big">
-                <div class="circle_small">
+      <img src="/img/latestnews-bottom.png" alt="">
 
-                </div>
-              </div>
+      <div class="nv_container position-relative">
 
-            </div>
-            <div class="text_circle">
-              <p>PASS RATE</p>
-            </div>
-          </div>
-          <div class="col-4"></div>
-          <div class="col-4"></div>
+        <div class="nv_position w-100">
+          <Progress_loader/> 
+
         </div>
+
+            
+            
       </div>
 
     </div>
@@ -109,11 +103,10 @@ export default {
 
 <style lang="scss" scoped>
 @use '../scss/general/variables' as *;
-
 @import '../scss/general/general';
 
 .cta_call{
-  background-image: url(../../public/img/horizontal-cta-background.jpg);
+  background-image: url(/img/horizontal-cta-background.jpg);
   background-size: cover;
   min-height: 240px;
   color: $secondary-color;
@@ -129,6 +122,7 @@ export default {
   min-height: 450px;
 }
 .row{
+  min-height: 300px;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -158,11 +152,8 @@ export default {
       text-transform: uppercase;
       font-weight: 600;
       font-size: 14px;
-
+      }
     }
-
-    }
-
   }
   .course_card{
     .image_course{
@@ -179,51 +170,17 @@ export default {
       color:$font-section;
     }
   }
-
-  .debug{
-    border: 1px solid black;
-  }
 .percentuali{
   background-size: cover;
-  
+  min-height: 400px;
   img{
     filter: invert(5%) grayscale(100%);
   }
-  .circle_container{
-    width: 220px;
-    height: 220px;
-    border: 1px solid red;
-    margin: 20px auto;
-    .circle_big{
-      width: 100%;
-      height: 100%;
-      border-radius: 100%;
-      border: 8px solid green;
-    }
-    /*
-    @keyframes bording {
-      0% { border-left: 10px solid #2ecc71; }
-      25% { border-left: 10px solid white; border-top: 10px solid #2ecc71; }
-      50% { border-top: 10px solid white; border-right: 10px solid #2ecc71; }
-      75% { border-right: 10px solid white; border-bottom: 10px solid #2ecc71; }
-      100% { border-bottom: 10px solid white; border-left: 10px solid #2ecc71; }
-      }
-      
-      #animazione4 li{
-      width: 150px;
-      height: 150px;
-      line-height: 150px;
-      border: 10px solid white !important;
-      border-radius: 100px;
-      transition: all 0.5s ease-out;
-      }
-      //ANIMAZIONE 4 HOVER 
-      #animazione4 li:hover{
-      animation: bording 3s infinite 0s;
-      animation-timing-function: linear;
-      }*/
-  }
+  .nv_position{
+    position: absolute;
+    top: -150px;
 
+  }
 }
 
 

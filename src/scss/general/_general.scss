@@ -20,10 +20,11 @@ img{
   font-weight: 600;
   font-size: 14px;
   border: none;
+  transition: all 0.4s;
   &:hover{
     text-decoration: none;
     color: $secondary-color;
-    background-color: darken($color: $primary-color, $amount: 8%)
+    background-color: darken($color: $primary-color, $amount: 10%)
 
   }
 }
@@ -37,6 +38,7 @@ img{
   color: $font-section;
   border: 3px solid $font-section;
   border-radius: 15px;
+  transition: all 0.4s;
   &:hover{
     color: $primary-color;
     border: 3px solid $primary-color;
