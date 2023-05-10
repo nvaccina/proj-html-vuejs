@@ -11,3 +11,4 @@ Riprodurre il layout proposto solo in versione Desktop
 - Aggiunte cards Section Course;
 - Struttura footer top con props;
 - Strutta footer bottom con props;
+- Struttura e cards instructors;

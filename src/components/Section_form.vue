@@ -42,7 +42,7 @@ export default {
               <input type="text" class="form-control" placeholder="Last name" aria-label="Location">
             </div>
             <div class="col-12 py-3 text-center">
-              <button type="submit" class="nv_button ">request a callback</button>
+              <a href="#" type="submit" class="nv_button ">request a callback</a>
             </div>
 
           </div>

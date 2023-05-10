@@ -100,6 +100,29 @@ const iconSocial = [
     href: "#",
   }
 ];
+const instructors = [
+  {
+    image: 'instructor-mikehart',
+    name: 'Mike Hart',
+    icons: ['fa-brands fa-facebook-f','fa-brands fa-twitter', 'fa-brands fa-instagram'],
+    href: "#",
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  },
+  {
+    image: 'instructor-johnsmith',
+    name: 'John Smith',
+    icons: ['fa-brands fa-facebook-f','fa-brands fa-twitter', 'fa-brands fa-instagram'],
+    href: "#",
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  },
+  {
+    image: 'instructor-angelahart',
+    name: 'Angela Hart',
+    icons: ['fa-brands fa-facebook-f','fa-brands fa-twitter', 'fa-brands fa-instagram'],
+    href: "#",
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  }
+]
 
 
-export {mainMenu, contactDetails, listCourses, iconSocial};
+export {mainMenu, contactDetails, listCourses, iconSocial, instructors};

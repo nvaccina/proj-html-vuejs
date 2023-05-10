@@ -73,14 +73,27 @@ export default {
 
 
   </section>
-  <section>
+  <section class="pb-5">
     <div>
       <div class="nv_container">
         <h1>% esami passati</h1>
         <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
+          <div class="col-4 debug">
+            
+            <div class="circle_container">
+              <div class="circle_big">
+                <div class="circle_small">
+
+                </div>
+              </div>
+
+            </div>
+            <div class="text_circle">
+              <p>PASS RATE</p>
+            </div>
+          </div>
+          <div class="col-4"></div>
+          <div class="col-4"></div>
         </div>
       </div>
       
@@ -114,12 +127,6 @@ export default {
   background-size: cover;
   min-height: 400px;
 }
-.col{
-    //debugg
-    
-    min-height: 300px;
-    border: 1px solid black;
-  }
   .main_card_courses{
     position: relative;
     border-radius: 15px;
@@ -148,17 +155,51 @@ export default {
       img{
         transition: all 0.8s;
         &:hover{
-            transform: scale(1.1);
+          transform: scale(1.1);
         }
       }
-      
-
     }
-
-
     h5{
       color:$font-section;
     }
+  }
+
+  .debug{
+    border: 1px solid black;
+  }
+  .circle_container{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    margin: 20px auto;
+    .circle_big{
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      border: 8px solid green;
+    }
+    /*
+    @keyframes bording {
+      0% { border-left: 10px solid #2ecc71; }
+      25% { border-left: 10px solid white; border-top: 10px solid #2ecc71; }
+      50% { border-top: 10px solid white; border-right: 10px solid #2ecc71; }
+      75% { border-right: 10px solid white; border-bottom: 10px solid #2ecc71; }
+      100% { border-bottom: 10px solid white; border-left: 10px solid #2ecc71; }
+      }
+      
+      #animazione4 li{
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      border: 10px solid white !important;
+      border-radius: 100px;
+      transition: all 0.5s ease-out;
+      }
+      //ANIMAZIONE 4 HOVER 
+      #animazione4 li:hover{
+      animation: bording 3s infinite 0s;
+      animation-timing-function: linear;
+      }*/
   }
 
 
