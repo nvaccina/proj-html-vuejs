@@ -26,7 +26,7 @@ export default {
   <div class="nv_jumbotron">
     <div class="jumbo">
       <span>Drive with Avada</span>
-      <h4>We offer the finest driving tuition money can buy</h4>
+      <p>We offer the finest driving tuition money can buy</p>
     </div>
   </div>
   
@@ -63,16 +63,14 @@ header{
   .jumbo{
     position: absolute;
     left: 12%;
-    bottom: 200px;
+    bottom: 180px;
     color: $secondary-color;
     span{
-      font-size: 55px;
+      font-size: 65px;
       font-weight: 600;
-      
     }
     p{
-      font-size: 40px;
-
+      font-size: 23px;
     }
   }
 

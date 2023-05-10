@@ -13,5 +13,7 @@ Riprodurre il layout proposto solo in versione Desktop
 - Strutta footer bottom con props;
 - Struttura e cards instructors;
 - Section News strutturata e rifinita;
+- Aggiornamento header con menu dinamico e props;
 - Section call to action;
 - Creato il componente contenente i progressive loader;
+- Creato componente shop (fixed);

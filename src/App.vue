@@ -7,6 +7,7 @@ import Section_testimonials from './components/Section_testimonials.vue'
 import Section_news from './components/Section_news.vue'
 import Section_cta from './components/Section_cta.vue'
 import Footer from './components/Footer.vue'
+import Shop from './components/partials/Shop.vue'
 
 
 export default {
@@ -20,6 +21,7 @@ export default {
     Section_news,
     Section_cta,
     Footer,
+    Shop,
   },
 
 }
@@ -42,10 +44,13 @@ export default {
   <Section_cta/>
 
   <Footer/>
+
+  <Shop/>
   
 </template>
 
 <style lang="scss">
 @use './scss/main.scss';
+
 
 </style>
