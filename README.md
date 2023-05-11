@@ -16,5 +16,5 @@ Riprodurre il layout proposto solo in versione Desktop
 - Aggiornamento header con menu dinamico e props;
 - Section call to action;
 - Creato il componente contenente i progressive loader;
-- Creato componente shop (fixed);
+- Creato componente Button_fix con pulsanti;
 - Creata section testimonials con swiper;

@@ -23,9 +23,9 @@ export default {
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     
 
-        <div class="logo pe-5 pt-2">
+        <div class="logo pe-5 pt-1">
           <a class="h-100 w-100" href="">
-            <img src="../../../public/img/avada-drivers-logo-2x-300x58.png" alt="Logo Avada Drivers">
+            <img src="/img/avada-drivers-logo-2x-300x58.png" alt="Logo Avada Drivers">
           </a>
         </div>
 
@@ -35,7 +35,7 @@ export default {
 
         <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
 
-          <ul class="navbar-nav ms-5">
+          <ul class="navbar-nav ms-1">
 
             <menu_component
               v-for="(link, index) in mainMenu" 
@@ -63,7 +63,7 @@ export default {
 @use '../../scss/general/variables' as *;
 
 .logo{
-  width: 320px;
+  width: 300px;
 }
 
 </style>

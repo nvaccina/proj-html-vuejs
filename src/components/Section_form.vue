@@ -1,16 +1,13 @@
 <script>
 export default {
   name:'Section_form',
-
 }
 </script>
 
 <template>
 
   <section id="formlessons">
-
     <div class="nv_container special_margin">
-
       <div class="row mt-5 position-relative">
 
         <!--Colonna con testo-->
@@ -53,9 +50,7 @@ export default {
 
         </div>
       </div>
-
     </div>
-
   </section>
   
 </template>
@@ -79,7 +74,6 @@ section{
     p{
       color: $font_color_ligth_blu;
     }
-    
   }
   .col:nth-child(2){
       position: absolute;
@@ -101,7 +95,6 @@ section{
         }
       }
     }
-
 }
 
 </style>

@@ -54,7 +54,7 @@ export default {
       </swiper>
     </div>
   </section>
-  
+
 </template>
 
 <style lang="scss" scoped>
@@ -64,12 +64,12 @@ export default {
 @import '../scss/general/utils';
 
 section{
-  min-height: 800px;
+  min-height: 900px;
   background-image: url(/img/testimonial-background.jpg);
   background-size: cover;
   background-position: center center;
   .nv_container{
-    padding-top: 180px;
+    padding-top: 200px;
     h2{
       color: $quaternary-color;
     }

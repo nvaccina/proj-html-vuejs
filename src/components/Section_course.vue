@@ -129,7 +129,7 @@ export default {
     position: absolute;
     left: 10px;
     bottom: -30px;
-    width: 430px;
+    width: 420px;
     border-radius: 15px;
     overflow: hidden;
     background-color: $secondary-color;
@@ -176,7 +176,7 @@ export default {
   }
   .nv_position{
     position: absolute;
-    top: -150px;
+    top: -160px;
     padding: 0 10px;
   }
 }

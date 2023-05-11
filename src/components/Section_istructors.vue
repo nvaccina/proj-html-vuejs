@@ -55,7 +55,7 @@ export default {
 <style lang="scss" scoped>
 @use '../scss/general/variables' as *;
 .nv_container{
-  min-height: 680px;
+  min-height: 720px;
   .col-4 .nv_button{
     padding: 12px 120px;
   }

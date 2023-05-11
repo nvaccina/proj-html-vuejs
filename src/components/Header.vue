@@ -41,16 +41,16 @@ export default {
   .nv_container{
     padding: 15px 0;
     font-size: 13px;
-    height: 53px;
+    height: 48px;
   }
 }
 header{
   position: absolute;
-  top: 53px;
+  top: 48px;
   left: 0;
   z-index: 1;
   width: 100%;
-  min-height: 130px;
+  min-height: 115px;
   background-color: rgba(54, 52, 52, 0.5);
 }
 .nv_jumbotron{
