@@ -62,22 +62,22 @@ const contactDetails = [
 ];
 const listCourses = [
   {
-    icon: "fa-solid fa-circle-arrow-right",
+    icon: "fa-regular fa-circle-right",
     href: "#",
     text: "Pass Plus",
   },
   {
-    icon: "fa-solid fa-circle-arrow-right",
+    icon: "fa-regular fa-circle-right",
     href: "#",
     text: "Intensive Course",
   },
   {
-    icon: "fa-solid fa-circle-arrow-right",
+    icon: "fa-regular fa-circle-right",
     href: "#",
     text: "Automatic",
   },
   {
-    icon: "fa-solid fa-circle-arrow-right",
+    icon: "fa-regular fa-circle-right",
     href: "#",
     text: "Instructor Training",
   }
@@ -122,7 +122,34 @@ const instructors = [
     href: "#",
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
   }
+];
+const listTestimonial = [
+  {
+    image: 'testimonial-kate',
+    name: 'Kate Lewis',
+    text: 'Avada Driving School really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.'
+  },
+  {
+    image: 'testimonial-harold',
+    name: 'Harold Green',
+    text: 'Avada Driving School really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.'
+  },
+  {
+    image: 'testimonial-kelly',
+    name: 'Kelly Johnson',
+    text: 'Avada Driving School really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.'
+  },
+  {
+    image: 'testimonial-grant',
+    name: 'Grant Harvey',
+    text: 'Avada Driving School really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.'
+  },
+  {
+    image: 'testimonial-sophia',
+    name: 'Sophia Jones',
+    text: 'Avada Driving School really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.'
+  }
 ]
 
 
-export {mainMenu, contactDetails, listCourses, iconSocial, instructors};
+export {mainMenu, contactDetails, listCourses, iconSocial, instructors, listTestimonial};

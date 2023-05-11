@@ -18,7 +18,7 @@ export default {
 
 <template>
   <section>
-    <div class="nv_container pt-5">
+    <div class="nv_container pt-5 position position-relative">
         <h1 class="fs-40 pb-4">Your Instructors</h1>
 
         <div class="row mb-5">
@@ -54,11 +54,21 @@ export default {
 
 <style lang="scss" scoped>
 @use '../scss/general/variables' as *;
+.nv_container{
+  border: 1px solid black;
+  min-height: 650px;
 
-h1{
-  color: $quaternary-color;
+  h1{
+    color: $quaternary-color;
+  }
+  p{
+    color: $font-section;
+  }
+  .card_container{
+    position: absolute;
+    left: 0;
+  }
+
 }
-p{
-  color: $font-section;
-}
+
 </style>

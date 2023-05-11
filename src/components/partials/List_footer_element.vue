@@ -14,8 +14,8 @@ export default {
 
     <li class="d-flex align-items-center ln_heigth-150 pb-3">
 
-      <i :class="icon" class="i_color fs-14"></i>
-      <a :href="href" class="ms-3 fs-13 fc_light_blu">{{ text }}</a>
+      <i :class="icon" class="fs-17"></i>
+      <p :href="href" class="fs-16 ms-3 m-0">{{ text }}</p>
 
     </li>
   
@@ -28,6 +28,9 @@ export default {
 
 .i_color{
   color: #BBCBD3;
+}
+a{
+  text-decoration: none;
 }
 
 </style>

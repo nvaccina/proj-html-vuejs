@@ -37,7 +37,7 @@ export default {
 
           <div class="col-3 ps-5">
             <p class="title_list"> <strong>contact details</strong> </p>
-            <ul class="px-0">
+            <ul class="px-0 fc_light_blu">
               <List_footer_element
                 v-for="(element, index) in contactDetails"
                 :key="index"
@@ -50,7 +50,7 @@ export default {
           </div>
           <div class="col-3">
             <p class="title_list"> <strong>courses</strong> </p>
-            <ul>
+            <ul class="px-0 primary_c">
               <List_footer_element
                 v-for="(element, index) in listCourses"
                 :key="index"
@@ -90,7 +90,7 @@ export default {
               :icon="element.icon"
               :href="element.href"
               :text="element.text"
-              class="primary_c"
+              class="secondary_c"
             />
  
           </ul>
@@ -117,7 +117,6 @@ footer{
     backdrop-filter: grayscale(100%);
     background-size: cover;
     background-position: center center;
-
     .title_list{
       text-transform: uppercase;
       color: $secondary-color;
@@ -126,8 +125,6 @@ footer{
   .footer_bottom{
     padding: 47px 0;
   }
-
-
 }
 
 </style>

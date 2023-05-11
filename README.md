@@ -17,3 +17,4 @@ Riprodurre il layout proposto solo in versione Desktop
 - Section call to action;
 - Creato il componente contenente i progressive loader;
 - Creato componente shop (fixed);
+- Creata section testimonials con swiper;

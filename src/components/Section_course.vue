@@ -26,10 +26,11 @@ export default {
   <!--Sction courses-->
   <section class="courses">
 
-    <div>
-      <div class="nv_container">
+
+      <div class="nv_container special_margin">
         <div class="row mt-5">
-          <div class="col-4 text-center main_card_courses">
+
+          <div class="text-center main_card_courses">
             <div class="triangle_container">
               <div class="triangle">New</div>
             </div>
@@ -43,7 +44,7 @@ export default {
             </div>
           </div>
 
-          <div class=" col-2 text-center course_card pt-3 mx-2">
+          <div class="text-center course_card pt-3">
             <div class="image_course">
               <img src="/img/courses-passplus.jpg" alt="">
             </div>
@@ -54,7 +55,7 @@ export default {
             </div>
           </div>
 
-          <div class="col-2 text-center course_card pt-3">
+          <div class="text-center course_card pt-3 mx-3">
             <div class="image_course">
               <img src="/img/course-intensive.jpg" alt="">
             </div>
@@ -64,7 +65,7 @@ export default {
             </div>
           </div>
 
-          <div class="col-2 text-center course_card pt-3 mx-4">
+          <div class="text-center course_card pt-3">
             <div class="image_course">
               <img src="/img/courses-instructor.jpg" alt="">
             </div>
@@ -76,26 +77,25 @@ export default {
         </div>
       </div>
       
-    </div>
+
 
 
   </section>
   <section class="pb-5">
-    <div class="percentuali">
-      <img src="/img/latestnews-bottom.png" alt="">
+      <div class="percentuali">
+        <img src="/img/latestnews-bottom.png" alt="">
 
-      <div class="nv_container position-relative">
+        <div class="nv_container position-relative">
 
-        <div class="nv_position w-100">
-          <Progress_loader/> 
+          <div class="nv_position w-100">
+            <Progress_loader/> 
 
+          </div>
         </div>
 
-            
-            
       </div>
 
-    </div>
+
     
   </section>
   
@@ -120,6 +120,9 @@ export default {
   background-size: cover;
   background-position: center center;
   min-height: 450px;
+  .special_margin{
+    padding-bottom: 180px;
+  }
 }
 .row{
   min-height: 300px;
@@ -130,8 +133,9 @@ export default {
 }
   .main_card_courses{
     position: absolute;
-    left: 0;
-    bottom: -45px;
+    left: 10px;
+    bottom: -40px;
+    width: 430px;
     
     border-radius: 15px;
     overflow: hidden;
@@ -156,6 +160,7 @@ export default {
     }
   }
   .course_card{
+    width: 220px;
     .image_course{
       overflow: hidden;
       cursor: pointer;
@@ -179,7 +184,7 @@ export default {
   .nv_position{
     position: absolute;
     top: -150px;
-
+    padding: 0 10px;
   }
 }
 

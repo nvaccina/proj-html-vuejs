@@ -70,11 +70,8 @@ export default {
 <style lang="scss" scoped>
 @use '../../scss/general/variables' as *;
 @import '../../scss/general/general';
-.card{
-  margin: 0 5px;
-  box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.2);
-  border-top: 6px solid $primary-color;
-  border-radius: 10px;
+.col-4:nth-child(2) .card{
+  margin: 0 10px;
 }
 .text_out{
   color: #8CA9BA;

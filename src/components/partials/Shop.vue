@@ -48,6 +48,11 @@ export default {
     border-radius: 5px;
     background-color: $secondary-color;
     box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    &:hover{
+      a{
+        color: $primary-color;
+      }
+    }
     a{
       color: #33475B;
     }

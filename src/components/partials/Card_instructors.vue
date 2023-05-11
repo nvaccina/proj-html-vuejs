@@ -21,7 +21,7 @@ export default {
 
 <template>
 
-  <div class="card mx-2 p-5 text-center">
+  <div class="card p-5 text-center">
     <div class="image">
       <img :src="instructor_image" :alt="name">
     </div>
@@ -46,6 +46,10 @@ export default {
 
 <style lang="scss" scoped>
 @use '../../scss/general/variables' as *;
+@import '../../scss/general/general';
+.card:nth-child(2){
+  margin: 0 10px;
+}
 .image{
   transition: all 0.4s;
   &:hover{
