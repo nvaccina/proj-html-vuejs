@@ -41,13 +41,15 @@
   &-23{
     font-size: 23px;
   }
+  &-25{
+    font-size: 25px;
+  }
   &-30{
     font-size: 30px;
   }
   &-35{
     font-size: 35px;
   }
-
   &-40{
     font-size: 40px;
   }
@@ -74,5 +76,11 @@
 .pb{
   &-80{
     padding-bottom: 80px;
+  }
+}
+//MARGIN
+.mb{
+  &-50{
+    padding-bottom: 50px;
   }
 }

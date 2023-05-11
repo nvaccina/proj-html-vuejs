@@ -11,22 +11,20 @@ export default {
 
 <template>
   <!--Call to action telefonica-->
-  <section class="cta_call">
+  <section class="cta_call d-flex align-items-center">
     <div class="nv_container h-100 d-flex align-items-center justify-content-between">
-      <div>
-        <span class="fs-35 fw-600">Start Learning to Drive Today</span>
+      <div class="col-6">
+        <span class="fs-40 fw-600">Start Learning to Drive Today</span>
         <h5>Give us a call to schedule your first driving lesson</h5>
       </div>
-      <div>
+      <div class="col-4 d-flex align-items-center justify-content-around">
           <span class="fs-30"><i class="fa-solid fa-phone pe-4"></i>1-800-555-555</span>
       </div>
     </div>
   </section>
 
-  <!--Sction courses-->
+  <!--Section courses-->
   <section class="courses">
-
-
       <div class="nv_container special_margin">
         <div class="row mt-5">
 
@@ -35,8 +33,8 @@ export default {
               <div class="triangle">New</div>
             </div>
             
-            <h2 class="pt-5">Courses</h2>
-            <p class="px-5 py-5 ln_heigth-200 font_section_c">
+            <h2 class="pt-5 fs-40 quater_c">Courses</h2>
+            <p class="px-5 py-5 ln_heigth-200 fc_light_blu">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
             </p>
             <div class="pb-5">
@@ -104,11 +102,10 @@ export default {
 <style lang="scss" scoped>
 @use '../scss/general/variables' as *;
 @import '../scss/general/general';
-
 .cta_call{
   background-image: url(/img/horizontal-cta-background.jpg);
   background-size: cover;
-  min-height: 240px;
+  min-height: 270px;
   color: $secondary-color;
   h5{
     color: $secondary-color;
@@ -134,7 +131,7 @@ export default {
   .main_card_courses{
     position: absolute;
     left: 10px;
-    bottom: -40px;
+    bottom: -30px;
     width: 430px;
     
     border-radius: 15px;

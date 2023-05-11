@@ -21,7 +21,7 @@ export default {
 
 <template>
 
-  <div class="card p-5 text-center">
+  <div class="card text-center">
     <div class="image">
       <img :src="instructor_image" :alt="name">
     </div>
@@ -33,13 +33,13 @@ export default {
           :key="index"
           class="mx-3"
         >
-          <a :href="href">
+          <a :href="href" class="fc_light_blu">
             <i :class="icon"></i>
           </a>
         </li>
       </ul>
     </div>
-    <p class="ln_heigth-200">{{ text }}</p>
+    <p class="ln_heigth-200 fc_light_blu">{{ text }}</p>
   </div>
   
 </template>
@@ -50,6 +50,7 @@ export default {
 .card:nth-child(2){
   margin: 0 10px;
 }
+
 .image{
   transition: all 0.4s;
   &:hover{
@@ -57,10 +58,4 @@ export default {
     box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
   }
 }
-
-p, a{
-  color: $font-section;
-}
-
-
 </style>

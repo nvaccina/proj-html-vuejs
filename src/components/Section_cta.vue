@@ -45,7 +45,7 @@ section{
     margin: 0 auto;
   }
   .nv_button{
-    padding: 10px 270px;
+    padding: 12px 270px;
   }
 }
 

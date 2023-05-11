@@ -40,7 +40,7 @@ img{
 //elementi
 .nv_button{
   text-transform: uppercase;
-  padding: 10px 23px;
+  padding: 12px 23px;
   background-color: $primary-color;
   border-radius: 25px;
   color: $secondary-color;
@@ -74,6 +74,12 @@ img{
 .card{
   border-top: 6px solid $primary-color;
   border-radius: 10px;
-  //margin: 0 5px;
+  padding: 40px;
   box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nv_border_top{
+  border-top: 6px solid $font-section;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 15px;
 }

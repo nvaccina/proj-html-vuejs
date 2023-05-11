@@ -52,10 +52,7 @@ export default {
           />
         </swiper-slide>
       </swiper>
-
-      
     </div>
-
   </section>
   
 </template>
@@ -67,21 +64,16 @@ export default {
 @import '../scss/general/utils';
 
 section{
-  //debugg
   min-height: 800px;
   background-image: url(/img/testimonial-background.jpg);
   background-size: cover;
   background-position: center center;
   .nv_container{
     padding-top: 180px;
-
     h2{
       color: $quaternary-color;
     }
-
   }
-
-
 }
 
 </style>

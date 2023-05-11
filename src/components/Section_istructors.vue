@@ -19,16 +19,16 @@ export default {
 <template>
   <section>
     <div class="nv_container pt-5 position position-relative">
-        <h1 class="fs-40 pb-4">Your Instructors</h1>
+        <h1 class="fs-40 pb-4 quater_c">Your Instructors</h1>
 
         <div class="row mb-5">
           <div class="col-8">
-            <p class="ln_heigth-200 fs-22 pe-4">
+            <p class="ln_heigth-200 fs-22 pe-4 fc_light_blu">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
             </p>
           </div>
-          <div class="col-4">
-            <div>
+          <div class="col-4 d-flex align-items-center">
+            <div class="w-100">
               <a class="nv_button" href="#">More abou us</a>
             </div>
           </div>
@@ -55,14 +55,9 @@ export default {
 <style lang="scss" scoped>
 @use '../scss/general/variables' as *;
 .nv_container{
-  border: 1px solid black;
   min-height: 650px;
-
-  h1{
-    color: $quaternary-color;
-  }
-  p{
-    color: $font-section;
+  .col-4 .nv_button{
+    padding: 12px 120px;
   }
   .card_container{
     position: absolute;

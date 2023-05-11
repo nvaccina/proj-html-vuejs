@@ -20,13 +20,13 @@ export default {
 <template>
 
   <div class="nv_small_container fc_light_blu fs-18">
-    <div class="testimoniale_image w-100 d-flex justify-content-center my-5">
+    <div class="testimonial_image w-100 d-flex justify-content-center my-5">
       <img :src="urlImage" :alt="name">
     </div>
-    <div class="testimoniale_text">
+    <div class="testimonial_text">
       <p>{{ text }}</p>
     </div>
-    <div class="testimoniale_name my-4">
+    <div class="testimonial_name">
       <span class="fw-600">{{ name }}</span>
     </div>
     
@@ -42,11 +42,12 @@ export default {
 
 .nv_small_container{
   min-height: 300px;
-  .testimoniale_image{
+  .testimonial_image{
     img{
       width: 150px;
     }
-
+  }.testimonial_name{
+    margin: 30px 0;
   }
 }
 
