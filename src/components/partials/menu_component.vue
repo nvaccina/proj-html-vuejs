@@ -20,7 +20,7 @@ export default {
       class="nav-link" 
       aria-current="page" 
       :href="href" 
-      :class="{'dropdown-toggle': isdrop}"
+      :class="{'dropdown-toggle': isdrop, active : isActive}"
       role="button"
       data-bs-toggle="dropdown"
       aria-expanded="false"
@@ -60,16 +60,8 @@ li{
       color: $primary-color !important;
     }
   }
-  &:active{
-
-    a{
-      border-bottom: 2px solid $primary-color !important;
-      color: $primary-color !important;
-      
-    }
-  }
   a{
-    color: $secondary-color !important;
+    color: $secondary-color;
     padding-bottom: 10px;
     border-bottom: 2px solid transparent;
     .new{

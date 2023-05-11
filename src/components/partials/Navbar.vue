@@ -45,6 +45,7 @@ export default {
               :isActive="link.isActive"
               :isdrop="link.isdrop"
               :dropdownMenu:="link.dropdownMenu"
+              
             />
           </ul>
           <div class="ms-4">
@@ -64,8 +65,5 @@ export default {
 .logo{
   width: 300px;
 }
-
-
-
 
 </style>

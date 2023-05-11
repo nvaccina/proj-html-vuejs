@@ -19,16 +19,23 @@ img{
   color: $font_color_ligth_blu;
 }
 .primary_c{
-  color: $primary_color;
+  color: $primary_color !important;
 }
 .secondary_c{
   color: $primary_color;
+}
+.quater_c{
+  color: $quaternary-color;
 }
 .font_section_c{
   color: $font-section;
 }
 .bg_second_col{
   background-color: $secondary-color;
+}
+.active{
+  color: $primary_color !important;
+  border-bottom: 2px solid $primary_color !important;
 }
 //elementi
 .nv_button{

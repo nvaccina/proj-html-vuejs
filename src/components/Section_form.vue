@@ -9,43 +9,47 @@ export default {
 
   <section>
 
-    <div class="nv_container">
+    <div class="nv_container special_margin">
 
-      <div class="row my-5">
+      <div class="row mt-5 position-relative">
 
         <!--Colonna con testo-->
-        <div class="col col-6 my-5">
-          <h1>Get Behind The Wheel</h1>
+        <div class="col col-6 my-5 px-0 mx-0 ms-2">
+          <h1 class="quater_c mb-5">Get Behind The Wheel</h1>
           <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</span>
-          <p class=" mt-3">
+          <p class=" mt-4 lh-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Fusce et ultrices libero, at suscipit lacus. Sed vitae fringilla nibh. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Fusce et ultrices libero, at suscipit lacus. Sed vitae fringilla nibh.
           </p>
         </div>
 
         <!--Colonna con Form-->
-        <div class="col col-5 text-center py-3 form">
+        <div class="col col-6 text-center py-3">
+          <div class="nv_form">
+            <h3>First Lesson Free!</h3>
+            <p class="py-3 px-3">When you make a block booking with us your first lesson is included free.</p>
 
-          <h3>First Lesson Free!</h3>
-          <p class="py-3">When you make a block booking with us your first lesson is included free.</p>
+            <div class="row px-4">
+              <div class="col-12 pb-2">
+                <input type="text" class="form-control" placeholder="You Name*" aria-label="name" required>
+              </div>
+              <div class="col-12 py-3">
+                <input type="text" class="form-control" placeholder="Email*" aria-label="email" required>
+              </div>
+              <div class="col-12 py-2">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Email">
+              </div>
+              <div class="col-12 py-3">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Location">
+              </div>
+              <div class="col-12 py-3 text-center">
+                <a href="#" type="submit" class="nv_button ">request a callback</a>
+              </div>
 
-          <div class="row px-4">
-            <div class="col-12 py-2">
-              <input type="text" class="form-control" placeholder="You Name*" aria-label="name" required>
-            </div>
-            <div class="col-12 py-3">
-              <input type="text" class="form-control" placeholder="Email*" aria-label="email" required>
-            </div>
-            <div class="col-12 py-2">
-              <input type="text" class="form-control" placeholder="Last name" aria-label="Email">
-            </div>
-            <div class="col-12 py-3">
-              <input type="text" class="form-control" placeholder="Last name" aria-label="Location">
-            </div>
-            <div class="col-12 py-3 text-center">
-              <a href="#" type="submit" class="nv_button ">request a callback</a>
             </div>
 
           </div>
+
+
 
         </div>
       </div>
@@ -61,39 +65,43 @@ export default {
 
 section{
   background-color: $secondary-color;
-  .row{
-    position: relative;
+  .special_margin{
+    margin-bottom: 90px;
   }
   .col{
-    margin: 0 20px;
     h3{
       color: $primary-color;
     }
     span{
-      color: $font-section;
+      color: $font_color_ligth_blu;
       font-size: 22px;
     }
     p{
-      color: $font-section;
-    }
-    .form-control{
-      background-color: $tertiary-color;
-      &[placeholder]{
-        color: $font-section;
-        font-size: 12px;
-        padding: 15px;
-      }
+      color: $font_color_ligth_blu;
     }
     
   }
-  .form{
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    background-color: $secondary-color;
-    border-radius: 15px;
-    box-shadow:  5px 10px 18px rgba(0, 0, 0, 0.1);
-  }
+  .col:nth-child(2){
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+      padding: 0 20px;
+      .nv_form{
+        background-color: $secondary-color;
+        border-radius: 15px;
+        box-shadow:  5px 15px 18px rgba(0, 0, 0, 0.1);
+        padding: 40px 20px;
+        .form-control{
+          background-color: $tertiary-color;
+          color: $font_color_ligth_blu;
+          &[placeholder]{
+            font-size: 12px;
+            padding: 15px;
+          }
+        }
+      }
+    }
+
 }
 
 </style>
