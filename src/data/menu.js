@@ -43,21 +43,25 @@ const contactDetails = [
     icon: "fa-solid fa-house",
     href: "#",
     text: "12345 North Main Street, New York, NY 555555",
+    color: 'font_section_c'
   },
   {
     icon: "fa-solid fa-phone",
     href: "#",
     text: "1.800.555.6789",
+    color: 'font_section_c'
   },
   {
     icon: "fa-regular fa-envelope",
     href: "#",
     text: "info@your-domain.com",
+    color: 'font_section_c'
   },
   {
     icon: "fa-solid fa-link",
     href: "#",
     text: "Theme-Fusion.com",
+    color: 'font_section_c'
   }
 ];
 const listCourses = [
@@ -65,16 +69,19 @@ const listCourses = [
     icon: "fa-regular fa-circle-right",
     href: "#",
     text: "Pass Plus",
+    Isgreen: true,
   },
   {
     icon: "fa-regular fa-circle-right",
     href: "#",
     text: "Intensive Course",
+    Isgreen: true,
   },
   {
     icon: "fa-regular fa-circle-right",
     href: "#",
     text: "Automatic",
+    Isgreen: true,
   },
   {
     icon: "fa-regular fa-circle-right",
@@ -86,18 +93,22 @@ const iconSocial = [
   {
     icon: "fa-brands fa-facebook-f",
     href: "#",
+    nameSocial: 'Facebook',
   },
   {
     icon: "fa-brands fa-twitter",
     href: "#",
+    nameSocial: 'Twitter'
   },
   {
     icon: "fa-brands fa-youtube",
     href: "#",
+    nameSocial: 'You Tube'
   },
   {
     icon: "fa-brands fa-instagram",
     href: "#",
+    nameSocial: 'Instagram'
   }
 ];
 const instructors = [

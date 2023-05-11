@@ -87,10 +87,8 @@ export default {
 
           <div class="nv_position w-100">
             <Progress_loader/> 
-
           </div>
         </div>
-
       </div>
 
 
@@ -126,14 +124,12 @@ export default {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  
 }
   .main_card_courses{
     position: absolute;
     left: 10px;
     bottom: -30px;
     width: 430px;
-    
     border-radius: 15px;
     overflow: hidden;
     background-color: $secondary-color;
@@ -184,7 +180,5 @@ export default {
     padding: 0 10px;
   }
 }
-
-
 
 </style>

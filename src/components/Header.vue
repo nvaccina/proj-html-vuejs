@@ -24,7 +24,7 @@ export default {
   </header>
 
   <div class="nv_jumbotron">
-    <div class="jumbo">
+    <div class="jumbo fade-out-up">
       <span>Drive with Avada</span>
       <p>We offer the finest driving tuition money can buy</p>
     </div>

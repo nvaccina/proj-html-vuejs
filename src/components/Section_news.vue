@@ -70,7 +70,10 @@ export default {
     position: absolute;
     top: -40px;
     width: 100%;
-    padding: 60px;
+
+    .news_top{
+      padding: 60px;
+    }
     .col{
       padding: 0;
       min-height: 300px;
@@ -88,7 +91,6 @@ export default {
         }
       }
     }
-
   }
 
 

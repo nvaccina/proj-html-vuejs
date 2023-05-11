@@ -23,7 +23,7 @@ export default {
 
   <div class="card text-center">
     <div class="image">
-      <img :src="instructor_image" :alt="name">
+      <img :src="instructor_image" :alt="name" :title="name">
     </div>
     <h4 class="pt-4">{{ name }}</h4>
     <div class="social">

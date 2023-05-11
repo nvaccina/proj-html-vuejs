@@ -2,9 +2,11 @@
 export default {
   name:'List_footer_element',
   props:{
-    icon: String,
+    icona: String,
     href: String,
-    text: String
+    text: String,
+    nameSocial: String,
+    color: String,
   }
 
 }
@@ -14,7 +16,7 @@ export default {
 
     <li class="d-flex align-items-center ln_heigth-150 pb-3">
 
-      <i :class="icon" class="fs-17"></i>
+      <i :class="[icona, color]" class="fs-17" title="nameSocial"></i>
       <p :href="href" class="fs-16 ms-3 m-0">{{ text }}</p>
 
     </li>

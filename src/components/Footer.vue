@@ -26,37 +26,42 @@ export default {
     <div class="footer_top">
 
       <div class="nv_container">
-        <div class="row py-5">
+        <div class="row row_top">
 
           <div class="col-3 pe-4">
-            <img src="/img/avada-drivers-logo-1x.png" alt="Logo">
+            <div class="logo_footer">
+              <img src="/img/avada-drivers-logo-1x.png" alt="Logo Avada-drivers">
+            </div>
+
             <p class="fc_light_blu fs-12 mt-2 ln_heigth-200">
               Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver wanting to pass first time.
             </p>
           </div>
 
-          <div class="col-3 ps-5">
+          <div class="col-3 ps-3 pe-5">
             <p class="title_list"> <strong>contact details</strong> </p>
             <ul class="px-0 fc_light_blu">
               <List_footer_element
                 v-for="(element, index) in contactDetails"
                 :key="index"
-                :icon="element.icon"
+                :icona="element.icon"
                 :href="element.href"
                 :text="element.text"
+                :color="element.color"
               />
-
             </ul>
           </div>
-          <div class="col-3">
+
+          <div class="col-3 ps-3">
             <p class="title_list"> <strong>courses</strong> </p>
             <ul class="px-0 primary_c">
               <List_footer_element
                 v-for="(element, index) in listCourses"
                 :key="index"
-                :icon="element.icon"
+                :icona="element.icon"
                 :href="element.href"
                 :text="element.text"
+                :color="element.color"
                 class="primary_c"
               />
             </ul>
@@ -87,12 +92,13 @@ export default {
             <List_footer_element
               v-for="(element, index) in iconSocial"
               :key="index"
-              :icon="element.icon"
+              :icona="element.icon"
               :href="element.href"
               :text="element.text"
+              :nameSocial="element.nameSocial"
+              
               class="secondary_c"
             />
- 
           </ul>
         </div>
       
@@ -117,13 +123,20 @@ footer{
     backdrop-filter: grayscale(100%);
     background-size: cover;
     background-position: center center;
+    .row_top{
+      padding-top: 70px;
+      padding-bottom: 80px;
+      .logo_footer{
+        width: 220px;
+      }
+    }
     .title_list{
       text-transform: uppercase;
       color: $secondary-color;
     }
   }
   .footer_bottom{
-    padding: 47px 0;
+    padding: 60px 0;
   }
 }
 

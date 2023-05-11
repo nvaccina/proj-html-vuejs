@@ -29,13 +29,13 @@ export default {
           </a>
         </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse ms-5" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
 
-          <ul class="navbar-nav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <menu_component
               v-for="(link, index) in mainMenu" 

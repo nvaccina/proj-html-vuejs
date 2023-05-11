@@ -18,7 +18,7 @@ export default {
 
 <template>
   <section>
-    <div class="nv_container pt-5 position position-relative">
+    <div class="nv_container pt-80 position position-relative">
         <h1 class="fs-40 pb-4 quater_c">Your Instructors</h1>
 
         <div class="row mb-5">
@@ -29,7 +29,7 @@ export default {
           </div>
           <div class="col-4 d-flex align-items-center">
             <div class="w-100">
-              <a class="nv_button" href="#">More abou us</a>
+              <a class="nv_button" href="#">More about us</a>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default {
 <style lang="scss" scoped>
 @use '../scss/general/variables' as *;
 .nv_container{
-  min-height: 650px;
+  min-height: 680px;
   .col-4 .nv_button{
     padding: 12px 120px;
   }

@@ -1,4 +1,5 @@
 <script>
+import {mainMenu} from '../../data/menu.js';
 export default {
   name: 'menu_component',
   props:{
@@ -7,6 +8,11 @@ export default {
     isActive: Boolean,
     isdrop: Boolean,
     dropdownMenu: Array,
+  },
+  data(){
+    return{
+      mainMenu,
+    }
   }
 }
 </script>
@@ -28,12 +34,13 @@ export default {
       {{ text }}
       <span v-if="text == 'COURSES'" class="new">NEW</span>
     </a>
-    <ul class="dropdown-menu" v-if="dropdownMenu">
+    <ul class="dropdown-menu p-0 m-0" v-if="isdrop">
       <li 
-        v-for="(i, index) in dropdownMenu" 
+        v-for="(element, index) in mainMenu[3].dropdownMenu" 
         :key="index"
+        class="p-0 m-0"
       >
-        <a class="dropdown-item py-0" href="#">{{dropdownMenu[0]}}</a>
+        <a class="dropdown-item py-3 px-3" href="#">{{element}}</a>
       </li>
     </ul>
   </li>
@@ -50,9 +57,16 @@ li{
   &:hover{
     .dropdown-menu{
       display: block;
+      border-radius: 0;
       a:not(.nv_button){
         border: 0px !important;
         color: black !important;
+      }
+      .dropdown-item{
+        transition: all .5s;
+      }
+      .dropdown-item:hover{
+        background-color: $primary-color;
       }
     }
     a{
