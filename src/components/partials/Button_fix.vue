@@ -19,13 +19,15 @@ export default {
 
     <div class="shop my_follow text-center">
       <a href="#">
-        <i class="fa-solid fa-cart-shopping fs-25 before"></i>
-        <i class="fa-solid fa-cart-shopping fs-25 after"></i>
+        <i class="fa-solid fa-cart-shopping fs-25"></i>
         <p class="fs-12 fw-700 m-0">Buy Now</p>
       </a>
-
-    </div>
-
+    </div>   
+  </div>
+  <div class="back-to-top">
+    <a href="#menuheader">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
   </div>
 
   
@@ -50,40 +52,33 @@ export default {
     border-radius: 5px;
     background-color: $secondary-color;
     box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-    /*
     &:hover{
       a{
         color: $primary-color;
       }
-    }*/
+    }
     a{
       color: #33475B;
     }
-    .before{
-      position: absolute;
-      right: 80px;
-      color: red;
-      animation: linear 0.5s;
-    }
-    .my_follow:hover{
-      .before{
-        top: 0;
-        right: 0;
-      }
-    }
-    .my_follow:hover .before{
-      animation: sposta-before 2s linear;
-    }
-    @keyframes sposta-before{
-      0%{
-        left: 10%;
-      }
-      50%{
-        left: 100px;
-      }
-      100%{
-        left: 10%;
-      }
+  }
+}
+.back-to-top{
+  position: fixed;
+  bottom: 0;
+  right: 80px;
+  padding: 8px 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #4B4D4A;
+  cursor: pointer;
+  transition: all 0.3s;
+  a{
+    color: $secondary-color;
+  }
+  &:hover{
+    background-color: $primary-color;
+    a{
+      color: $secondary-color;
     }
   }
 }

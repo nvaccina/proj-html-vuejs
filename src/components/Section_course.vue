@@ -24,7 +24,7 @@ export default {
   </section>
 
   <!--Section courses-->
-  <section class="courses">
+  <section class="courses" id="coursesinfo">
       <div class="nv_container special_margin">
         <div class="row mt-5">
 

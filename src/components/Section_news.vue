@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-  <section class="news">
+  <section class="news" id="latestnews">
 
     <div class="nv_container position-relative">
       <div class="news_container text-center nv_border_top">

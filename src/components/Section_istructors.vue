@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section id="instructors">
     <div class="nv_container pt-80 position position-relative">
         <h1 class="fs-40 pb-4 quater_c">Your Instructors</h1>
 

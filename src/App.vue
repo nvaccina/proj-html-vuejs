@@ -7,7 +7,7 @@ import Section_testimonials from './components/Section_testimonials.vue'
 import Section_news from './components/Section_news.vue'
 import Section_cta from './components/Section_cta.vue'
 import Footer from './components/Footer.vue'
-import Shop from './components/partials/Shop.vue'
+import Button_fix from './components/partials/Button_fix.vue'
 
 
 export default {
@@ -21,7 +21,7 @@ export default {
     Section_news,
     Section_cta,
     Footer,
-    Shop,
+    Button_fix,
   },
 
 }
@@ -45,7 +45,7 @@ export default {
 
   <Footer/>
 
-  <Shop/>
+  <Button_fix/>
   
 </template>
 

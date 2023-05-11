@@ -6,19 +6,19 @@ const mainMenu = [
     isdrop: false
   },
   {
-    href: "#",
+    href: "#instructors",
     text: "ABOUT",
     isActive: false,
     isdrop: false
   },
   {
-    href: "#",
+    href: "#formlessons",
     text: "PRICES",
     isActive: false,
     isdrop: false
   },
   {
-    href: "#",
+    href: "#coursesinfo",
     text: "COURSES",
     isActive: false,
     isdrop: true,
@@ -31,7 +31,7 @@ const mainMenu = [
     isdrop: false
   },
   {
-    href: "#",
+    href: "#latestnews",
     text: "BLOG",
     isActive: false,
     isdrop: false
