@@ -33,10 +33,10 @@ export default {
                 <input type="text" class="form-control" placeholder="Email*" aria-label="email" required>
               </div>
               <div class="col-12 py-2">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Email">
+                <input type="text" class="form-control" placeholder="Telephone" aria-label="telephone">
               </div>
               <div class="col-12 py-3">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Location">
+                <input type="text" class="form-control" placeholder="Location" aria-label="Location">
               </div>
               <div class="col-12 py-3 text-center">
                 <a href="#" type="submit" class="nv_button ">request a callback</a>

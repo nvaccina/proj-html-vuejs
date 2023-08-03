@@ -19,11 +19,11 @@ export default {
 
 <template>
   <li 
-    class="nav-item" 
+    class="nav-item px-2" 
     :class="{'dropdown': isdrop}"
   >
     <a 
-      class="nav-link" 
+      class="nav-link px-0" 
       aria-current="page" 
       :href="href" 
       :class="{'dropdown-toggle': isdrop, active : isActive}"

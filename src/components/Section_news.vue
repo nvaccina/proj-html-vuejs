@@ -14,7 +14,7 @@ export default {
         <div class="news_top bg_second_col pb-5">
           <h1 class="pb-5 quater_c">Latest News</h1>
 
-          <div class="row mb-50">
+          <div class="row pb-50">
             <div class="col">
               <div class="car_image">
                 <img src="/img/blog-choosecar-320x202.jpg" alt="Audi Red">
